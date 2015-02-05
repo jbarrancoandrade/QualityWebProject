@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Productos</title>
+        <meta charset="UTF-8">
+        <meta content='width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no' name='viewport'>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="author" content="Ingeniero Jhon Jairo Barranco Andrade"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content="Web Site Corporate"/>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="CSS/footer.css" rel="stylesheet" type="text/css"/>
+        <!--Favicon-->
+        <link rel="icon"  href="Image/Quality/favicon-128x128.png" />
+        <!--end favicon-->
+
+        <!--Styles-->
+        <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css"/><!--bootstrap.css enlace-->
+        <link href="skins/default.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/owl.carousel.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/Productos.css" rel="stylesheet" type="text/css"/>
+        <style>
+            /* CSS REQUIRED */
+            .state-icon {
+                left: -5px;
+            }
+            .list-group-item-primary {
+                color: rgb(255, 255, 255);
+                background-color: rgb(66, 139, 202);
+            }
+
+            /* DEMO ONLY - REMOVES UNWANTED MARGIN */
+            .well .list-group {
+                margin-bottom: 0px;
+            }
+
+            .clickable
+            {
+                cursor: pointer;
+            }
+
+            .clickable .glyphicon
+            {
+                background: rgba(0, 0, 0, 0.15);
+                display: inline-block;
+                padding: 6px 12px;
+                border-radius: 4px
+            }
+
+            .panel-heading span
+            {
+                margin-top: -23px;
+                font-size: 15px;
+                margin-right: -9px;
+            }
+            a.clickable { color: inherit; }
+            a.clickable:hover { text-decoration:none; }
+
+            .btn span.glyphicon {    			
+                opacity: 0;				
+            }
+            .btn.active span.glyphicon {				
+                opacity: 1;				
+            }
+        </style>
+        <!--End Styles-->
+
+        <!--Script-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!--Jquery.js enlace-->
+        <script src="JS/bootstrap.js" type="text/javascript"></script><!--bootstrap.js enlace-->
+        <script src="JS/owl.carousel.js" type="text/javascript"></script>
+        <script src="JS/productos.js" type="text/javascript"></script>
+        <script src="JS/spiner.js" type="text/javascript"></script>
+
+        <script src="JS/panelMinus.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                $('.collapse').on('show.bs.collapse', function () {
+                    var id = $(this).attr('id');
+                    $('a[href="#' + id + '"]').closest('.panel-heading').addClass('active-faq');
+                    $('a[href="#' + id + '"] .panel-title span').html('<i class="glyphicon glyphicon-minus"></i>');
+                });
+                $('.collapse').on('hide.bs.collapse', function () {
+                    var id = $(this).attr('id');
+                    $('a[href="#' + id + '"]').closest('.panel-heading').removeClass('active-faq');
+                    $('a[href="#' + id + '"] .panel-title span').html('<i class="glyphicon glyphicon-plus"></i>');
+                });
+
+            });
+        </script>
+
+        <!-- End Script-->
+    </head>
+    <body>
+        <div id="wrapper">
+            <!--header-->
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="container">
+                                <div class="container-fluid">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-6">
+                                            <h1 class="text-muted">Company Name</h1>
+                                        </div>
+
+                                        <div class="col-lg-offset-2" style="margin-top:15px;">
+                                            <button class="btn pull-right" type="button">Ingresar</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="navbar-collapse collapse navbar-right">
+                                    <ul class="nav navbar-nav">
+                                        <li ><a href="index.html">Inicio</a></li>
+                                        <li><a href="Productos.html">Productos</a></li>
+                                        <li><a href="Conocenos.html">Conócenos</a></li>
+                                        <li><a href="Contactanos.html">Contacto</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!--End Header-->
+
+            <section>
+                <div class="carousel fade-carousel " data-ride="carousel" data-interval="4000" id="bs-carousel">
+                    <!-- Overlay -->
+                    <div class="overlay"></div>
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#bs-carousel" data-slide-to="1"></li>
+                        <li data-target="#bs-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item slides active">
+                            <div class="slide-1"></div>
+                            <div class="hero">
+                                <hgroup>
+                                    <h1>Titulo</h1>        
+                                    <h3>Informacion del proyecto</h3>
+                                </hgroup>
+                                <button class="btn btn-hero btn-lg" role="button">ver mas</button>
+                            </div>
+                        </div>
+                        <div class="item slides">
+                            <div class="slide-2"></div>
+                            <div class="hero">        
+                                <hgroup>
+                                    <h1>titulo 2</h1>        
+                                    <h3>informacion del proyecto</h3>
+                                </hgroup>       
+                                <button class="btn btn-hero btn-lg" role="button">ver mas</button>
+                            </div>
+                        </div>
+                        <div class="item slides">
+                            <div class="slide-3"></div>
+                            <div class="hero">        
+                                <hgroup>
+                                    <h1>titulo 3</h1>        
+                                    <h3>informacion del proyecto</h3>
+                                </hgroup>
+                                <button class="btn btn-hero btn-lg" role="button">ver mas</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section>
+                <!--<div class="container">
+                                      <div class="row">
+                                          <ul class="thumbnails list-unstyled">
+                                              <li class="col-md-4">
+                                                  <div class="thumbnail" style="padding: 0">
+                                                      <div style="padding:4px">        <img alt="300x200" style="width: 100%" src="http://placehold.it/200x150">
+                                                      </div>
+                                                      <div class="caption">
+                                                          <h2>Producto A</h2>
+                                                          <p>Descripcion producto</p>
+                                                          <p><i class="icon icon-map-marker"></i> adicionaly</p>
+                                                      </div>
+                                                      <div class="modal-footer" style="text-align: left">
+                                                          <div class="container-fluid">   
+                                                              <div class="row">
+                                                                  <div class="">
+                                                                     
+                                                                      <ul class="nav nav-tabs faq-cat-tabs">
+                                                                          <li class="active"><a href="#faq-cat-1" data-toggle="tab">Modulos</a></li>
+                                                                          <li><a href="#faq-cat-2" data-toggle="tab">Descripciones</a></li>
+                                                                          <li><a href="#faq-cat-3" data-toggle="tab">Config</a></li>
+                                                                      </ul>
+                  
+                                                                    
+                                                                      <div class="tab-content faq-cat-content">
+                                                                          <div class="tab-pane active in fade" id="faq-cat-1">
+                                                                              <ul class="list-group checked-list-box">
+                                                                                  <li class="list-group-item">Modulo1</li>
+                                                                                  <li class="list-group-item" data-checked="true">Modulo2</li>
+                                                                                  <li class="list-group-item">Modulo3</li>
+                                                                                  <li class="list-group-item">Modulo4</li>
+                                                                                  <li class="list-group-item">Modulo5</li>
+                                                                                  <li class="list-group-item">Modulo6</li>
+                  
+                                                                              </ul>
+                                                                              <button type="submit"  class="btn btn-primary"  style="float: right">Cotizar</button>
+                  
+                                                                          </div>
+                                                                          <div class="tab-pane fade" id="faq-cat-2">
+                                                                              <div class="panel-group" id="accordion-cat-2">
+                                                                                  <div class="panel panel-default panel-faq">
+                                                                                      <div class="panel-heading">
+                                                                                          <a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-1">
+                                                                                              <h4 class="panel-title">
+                                                                                                  Modulo #1
+                                                                                                  <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                                                                              </h4>
+                                                                                          </a>
+                                                                                      </div>
+                                                                                      <div id="faq-cat-2-sub-1" class="panel-collapse collapse">
+                                                                                          <div class="panel-body">
+                                                                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="panel panel-default panel-faq">
+                                                                                      <div class="panel-heading">
+                                                                                          <a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-2">
+                                                                                              <h4 class="panel-title">
+                                                                                                  Modulo #2
+                                                                                                  <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                                                                              </h4>
+                                                                                          </a>
+                                                                                      </div>
+                                                                                      <div id="faq-cat-2-sub-2" class="panel-collapse collapse">
+                                                                                          <div class="panel-body">
+                                                                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="tab-pane fade" id="faq-cat-3">
+                         
+                                                                              <form class="form-horizontal" role="form">
+                                                                                  <fieldset>
+                  
+                                                                                    
+                                                                                      <legend>Detalles</legend>
+                  
+                                                                                 
+                                                                                      <div >
+                                                                                          <label  for="textinput">Servidores</label>
+                                                                                         <div class="center">
+                  
+                                                                                          <div class="input-group number-spinner">
+                                                                                              <span class="input-group-btn data-dwn">
+                                                                                                  <button class="btn btn-default " data-dir="dwn" disabled="disabled"><span class="glyphicon glyphicon-minus"></span></button>
+                                                                                              </span>
+                                                                                              <input type="number" readonly="readonly" class="form-control text-center" value="1" min="0" max="40">
+                                                                                              <span class="input-group-btn data-up">
+                                                                                                  <button class="btn btn-default" data-dir="up" disabled="disabled"><span class="glyphicon glyphicon-plus"></span></button>
+                                                                                              </span>
+                                                                                          </div>
+                  
+                                                                                      </div>
+                                                                                      </div>
+                  
+                                                                                     
+                  
+                                                                                      <label  for="textinput">Estaciones</label>
+                  
+                                                                                      <div class="center">
+                  
+                                                                                          <div class="input-group number-spinner">
+                                                                                              <span class="input-group-btn data-dwn">
+                                                                                                  <button class="btn btn-default " data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                                                                              </span>
+                                                                                              <input type="number" class="form-control text-center" value="1" min="-10" max="40">
+                                                                                              <span class="input-group-btn data-up">
+                                                                                                  <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                                                                              </span>
+                                                                                          </div>
+                  
+                                                                                      </div>
+                                                                                  </fieldset>
+                                                                              </form>
+                                                                          </div>
+                  
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </div>
+                  
+                  
+                                      
+                  
+                                  </div>-->
+
+
+
+                <div class="container">
+                    <div class="page-header">
+                        <h1>Nuestros Productos<span class="pull-right label label-default"></span></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel with-nav-tabs panel-default">
+                                <div class="panel-heading">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#tab1default" data-toggle="tab">Modulos</a></li>
+                                        <li><a href="#tab2default" data-toggle="tab">Paquetes</a></li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade in active" id="tab1default">
+                                            <div >
+                                                <div class="row">
+                                                    <!-- Boxes de Acoes -->
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-hdd-o"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">INVENTARIO</h3>
+
+
+                                                                    <p>
+                                                                        Mantén tu catálogo de productos y servicios actualizado, ordenados y categorizados de acuerdo a tus necesidades
+                                                                    </p>
+                                                                    </br>
+                                                                    </br>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">Clientes</h3>
+
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">TESORERIA</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>		    
+                                                    <!-- /Boxes de Acoes -->
+                                                </div>
+                                                <div class="row">
+                                                    <!-- Boxes de Acoes -->
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">CARTERA</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">COMPRAS & CUENTAS POR PAGAR</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">CONTABILIDAD</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>		    
+                                                    <!-- /Boxes de Acoes -->
+                                                </div>
+
+                                                <div class="row">
+                                                    <!-- Boxes de Acoes -->
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">NÓMINA</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">Ropa y Calzado</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">Tecnicentros</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>		    
+                                                    <!-- /Boxes de Acoes -->
+                                                </div>
+
+                                                <div class="row">
+                                                    <!-- Boxes de Acoes -->
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">Drogeria</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">Salones de Belleza</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                        <div class="box">							
+                                                            <div class="icon">
+                                                                <div class="image"><i class="fa fa-bed" ></i></div>
+                                                                <div class="info">
+                                                                    <span style="float: right;">
+                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="checkbox" >
+                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                            </label>
+
+                                                                        </div>
+                                                                    </span>
+                                                                    <h3 class="title">Moteles</h3>
+                                                                    <p>
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                    </p>
+                                                                    <div class="more">
+                                                                        <a href="#" title="Title Link">
+                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="space"></div>
+                                                        </div> 
+                                                    </div>		    
+                                                    <!-- /Boxes de Acoes -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab2default">
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="panel panel-primary">
+                                                        <div class="panel-heading">
+                                                            <h3 class="panel-title">
+                                                                ERP</h3>
+
+
+                                                            </span>
+                                                            <span class="pull-right clickable" id="click_erp"><i class="glyphicon glyphicon-minus"></i></span>
+                                                        </div>
+                                                        <div class="panel-body" id="erp_panel">
+                                                            <div class="row">
+                                                                <span class="pull-right "  >
+                                                                    <label>Seleccione</label>
+                                                                    <div class="btn-group" data-toggle="buttons">
+                                                                        <label class="btn btn-default">
+                                                                            <input type="checkbox" >
+                                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+
+                                                            </div>
+                                                            <div >
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-hdd-o"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">INVENTARIO</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">FACTURACIÒN Y VENTAS</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">TESORERIA</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">CARTERA</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">COMPRAS & CUENTAS POR PAGAR</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">CONTABILIDAD</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">NÓMINA</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+                                                                                    <h3 class="title">Ropa y Calzado</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">Tecnicentros</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">Drogeria</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">Salones de Belleza</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-bed" ></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">Moteles</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+                                                            </div></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="panel panel-info">
+                                                        <div class="panel-heading" >
+                                                            <h3 class="panel-title">
+                                                                POS</h3>
+
+                                                            <span class="pull-right clickable"  id="Click_pos"><i class="glyphicon glyphicon-minus"></i></span>
+                                                        </div>
+                                                        <div class="panel-body" id="pos_panel">
+                                                            <div class="row">
+                                                                <span class="pull-right "  >
+                                                                    <label>Seleccione</label>
+                                                                    <div class="btn-group" data-toggle="buttons">
+                                                                        <label class="btn btn-default">
+                                                                            <input type="checkbox" >
+                                                                            <span class="glyphicon glyphicon-ok"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </span>
+                                                            </div> 
+                                                            <div >
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-hdd-o"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">INVENTARIO</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">FACTURACIÒN Y VENTAS</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">TESORERIA</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">CARTERA</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">COMPRAS & CUENTAS POR PAGAR</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">CONTABILIDAD</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">NÓMINA</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">Ropa y Calzado</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">Tecnicentros</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">Drogeria</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">Salones de Belleza</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-bed" ></i></div>
+                                                                                <div class="info">
+
+                                                                                    <h3 class="title">Moteles</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+                                                            </div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="panel panel-success">
+                                                        <div class="panel-heading">
+                                                            <h3 class="panel-title">
+                                                                Adicionales</h3>
+                                                            <span class="pull-right clickable" id="Click_adi"><i class="glyphicon glyphicon-minus"></i></span>
+                                                        </div>
+                                                        <div class="panel-body" id="adi_panel">
+                                                            <div >
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-hdd-o"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">INVENTARIO</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">FACTURACIÒN Y VENTAS</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">TESORERIA</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">CARTERA</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">COMPRAS & CUENTAS POR PAGAR</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">CONTABILIDAD</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">NÓMINA</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">Ropa y Calzado</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-desktop"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">Tecnicentros</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <!-- Boxes de Acoes -->
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">Drogeria</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer Mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-flag"></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">Salones de Belleza</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            Leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                                                                        <div class="box">							
+                                                                            <div class="icon">
+                                                                                <div class="image"><i class="fa fa-bed" ></i></div>
+                                                                                <div class="info">
+                                                                                    <span style="float: right;">
+                                                                                        <div class="btn-group" data-toggle="buttons">
+                                                                                            <label class="btn btn-default">
+                                                                                                <input type="checkbox" >
+                                                                                                <span class="glyphicon glyphicon-ok"></span>
+                                                                                            </label>
+
+                                                                                        </div>
+                                                                                    </span>
+                                                                                    <h3 class="title">Moteles</h3>
+                                                                                    <p>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+                                                                                    </p>
+                                                                                    <div class="more">
+                                                                                        <a href="#" title="Title Link">
+                                                                                            leer mas <i class="fa fa-angle-double-right"></i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="space"></div>
+                                                                        </div> 
+                                                                    </div>		    
+                                                                    <!-- /Boxes de Acoes -->
+                                                                </div>
+                                                            </div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3" style="float: right">
+                        <a href="#" class="btn btn-primary btn-lg btn-block btn-huge"><i class="fa fa-shopping-cart"></i> Cotizar</a>
+                    </div>
+                </div>
+
+
+                <br/>
+
+
+            </section>
+
+
+            <footer >
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="container">
+
+
+                                <div class="col-lg-3">
+                                    <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                        <p style="text-align:center; margin-top:20px;">
+                                            <img src="http://placehold.it/500x330" class="img-responsive" alt="">
+                                        </p>
+                                        <div class="caption">
+                                            <div class="blur"></div>
+                                            <div class="caption-text">
+                                                <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Nuestros Clientes</h3>
+                                                <p>Puedes Conocer todos nuestros Clientes Divididos por sector Comercial</p>
+                                                <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                        <p style="text-align:center; margin-top:20px;">
+                                            <img src="http://placehold.it/500x330" class="img-responsive" alt="">
+                                        </p>
+                                        <div class="caption">
+                                            <div class="blur"></div>
+                                            <div class="caption-text">
+                                                <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Familia Quality</h3>
+                                                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                                <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-lg-3 col-md-6">
+                                    <h3>Ciudades:</h3>
+                                    <ul>
+                                        <li>Barranquilla</li>
+                                        <li>Villavicencio</li>
+                                        <li>Santa Marta</li>
+                                        <li>Cartagena</li>
+                                        <li>Cali</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <h3>Contactanos:</h3>
+                                    <p>¿Tiene alguna pregunta o comentario? Ponte en contacto conmigo!</p>
+                                    <p>
+                                        General<br>
+                                        <i class="fa fa-phone"></i> 317-7806 <br>
+                                        <i class="fa fa-envelope"></i> gerencia@qualitysystems.com.co
+                                        Comercial y ventas<br>
+                                        <i class="fa fa-phone"></i> 317-7806 <br>
+                                        <i class="fa fa-envelope"></i> gerencia@qualitysystems.com.co
+                                    </p>
+
+                                    <h3>Siguenos:</h3>
+
+
+                                    <a  href="" id="gh" target="_blank" title="Twitter"><span class="fa-stack fa-lg">
+                                            <i class="fa fa-square-o fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x"></i>
+                                        </span>
+                                        Twitter</a>
+
+                                    <a  href=""  target="_blank" title="Youtube"><span class="fa-stack fa-lg">
+                                            <i class="fa fa-square-o fa-stack-2x"></i>
+                                            <i class="fa fa-youtube-square fa-stack-1x"></i>
+                                        </span>
+                                        Youtube</a>
+
+
+
+
+
+
+                                </div>
+                                <br/>
+                                <div id="fb-root"></div>
+                                <script>(function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id))
+                                            return;
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+                                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="">Tweet</a>
+                                <script>!function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                        if (!d.getElementById(id)) {
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = p + '://platform.twitter.com/widgets.js';
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }
+                                    }(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+                                <!-- Inserta esta etiqueta en la sección "head" o justo antes de la etiqueta "body" de cierre. -->
+                                <script src="https://apis.google.com/js/platform.js" async defer>
+                                    {
+                                        lang: 'es'
+                                    }
+                                </script>
+
+                                <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+                                <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+
+                                <br/>
+
+                                <hr>
+                                <p>Copyright © Quality Systems Group 2015| <a style="color: black" href="">Politicas De Privacidad</a> | <a style="color: black"href="">Terminos de uso</a></p>
+
+                            </div>
+
+                            </footer>
+
+
+                        </div>
+                        </body>
+                        </html>
