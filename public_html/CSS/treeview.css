@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/02/2015, 11:04:05 AM
+    Author     : jhonbarranco
+*/
+
+.panel > .list-group
+{
+    margin-bottom: 0;
+}
+.panel > .list-group .list-group-item
+{
+    border-width: 1px 0;
+}
+.panel > .list-group .list-group-item:first-child
+{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.panel > .list-group .list-group-item:last-child
+{
+    border-bottom: 0;
+}
+.panel-heading + .list-group .list-group-item:first-child
+{
+    border-top-width: 0;
+}
+.panel-default .list-group-item.active
+{
+    color: #000;
+    background-color: #DDD;
+    border-color: #DDD;
+    border-color: #DDD;
+}

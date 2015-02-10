@@ -45,6 +45,7 @@ $(document).on('click', '#Click_adi', function (e) {
         $this.parents('.panel').find('#adi_panel').slideDown();
         $this.removeClass('panel-collapsed');
         $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        
     }
 });
 

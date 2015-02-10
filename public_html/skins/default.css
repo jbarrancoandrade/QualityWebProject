@@ -118,13 +118,13 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(http://placehold.it/1300x620); 
+  background-image: url(../Image/sliders/6.jpeg);//http://placehold.it/1300x620 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(http://placehold.it/1300x620);
+  background-image: url(http://lorempixel.com/1300/620/business/9/);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(http://placehold.it/1300x620);
+  background-image: url(../Image/sliders/5.jpeg);
 }
 //aside
 .destacados{
