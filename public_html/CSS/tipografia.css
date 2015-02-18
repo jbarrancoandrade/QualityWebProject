@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/02/2015, 09:33:29 AM
+    Author     : jhonbarranco
+*/
+
+
+@import url('http://fonts.googleapis.com/css?family=Pacifico');
+@import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+/* empresas*/
+div.sizefont{
+    font-size: 12px;
+    /*top,right,bottom,left*/
+    padding:3% 0 3% 0;
+}
+
+/*
+Headings
+of <h1> to <h6>
+*/
+//fonts
+h1.font_h1{}
+h2.font_h2{}
+h3.font_h3{}
+h4.font_h4{}
+h5.font_h5{}
+h5.font_h5{}
+//size
+
+//special cases
+
+
+/*Menu*/
+ul.menuUl{}
+li.menuli{
+ 
+}
+
+p.asideBox{
+   
+}
+
+h1.subtitlesh1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #525252;
+}
+
+
+h3.title_Sector{
+    font-family: 'Pacifico'
+}
+li.body_Sector{
+
+}
+
+
+
+
+
+

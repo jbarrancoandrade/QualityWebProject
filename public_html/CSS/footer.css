@@ -12,6 +12,7 @@ and open the template in the editor.
 		position: relative;
 		overflow: hidden;
 		height: 200px;
+                width: 400px;
 	}
 	.cuadro_intro_hover:hover .caption{
 		opacity: 1;

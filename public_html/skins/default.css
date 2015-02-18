@@ -15,6 +15,10 @@ Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
 Image credits: unsplash.com
 */
 
+
+
+.wrapper{width:100%;border-bottom-color: red;}
+
 /********************************/
 /*       Fade Bs-carousel       */
 /********************************/
@@ -112,7 +116,7 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
-  height: 70vh;
+  height: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -121,7 +125,7 @@ Image credits: unsplash.com
   background-image: url(../Image/sliders/6.jpeg);//http://placehold.it/1300x620 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(http://lorempixel.com/1300/620/business/9/);
+  background-image: url(http://lorempixel.com/1400/620/business/9/);
 }
 .fade-carousel .slides .slide-3 {
   background-image: url(../Image/sliders/5.jpeg);
@@ -145,17 +149,17 @@ Image credits: unsplash.com
 	transition: 0.5s;
 }
 
-
-
-
-/********************************/
-/*          Media Queries       */
-/********************************/
-@media screen and (min-width: 980px){
-    .hero { width: 980px; }    
+#section2 {
+    margin-top: 2%;
+    padding-bottom: 2%;
+    background-color: #e5e5ef;
+    color:#686868;
 }
-@media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
-}
+
+
+
+
+
+
 
 

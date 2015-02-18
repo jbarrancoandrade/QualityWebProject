@@ -13,6 +13,7 @@ and open the template in the editor.
         <meta name="author" content="Ingeniero Jhon Jairo Barranco Andrade"/>
         <meta name="keywords" content=""/>
         <meta name="description" content="Web Site Corporate"/>
+        
 
         <!--Favicon-->
         <link rel="icon"  href="Image/Quality/favicon-128x128.png" />
@@ -25,14 +26,17 @@ and open the template in the editor.
         <link href="skins/default.css" rel="stylesheet" type="text/css"/>
         <link href="CSS/owl.carousel.css" rel="stylesheet" type="text/css"/>
         <link href="CSS/testimonios.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="CSS/footer.css" rel="stylesheet" type="text/css"/>
+        <link href="skins/Colores.css" rel="stylesheet" type="text/css"/>
+
+        <link href="CSS/fontello-a8e49f75/css/fontello.css" rel="stylesheet" type="text/css"/>
 
         <!--End Styles-->
-        
-        
 
+        <link href="CSS/empresas.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/tipografia.css" rel="stylesheet" type="text/css"/>
         <!--Script-->
 
         <script src="JS/bootstrap.js" type="text/javascript"></script><!--bootstrap.js enlace-->
@@ -42,15 +46,8 @@ and open the template in the editor.
             $(document).ready(function () {
 
                 $("#owl-demo").owlCarousel({
-                    items: 1,
-                    lazyLoad: true,
-                    autoPlay: true,
-                    navigation: true,
-                    navigationText: ["", ""],
-                    rewindNav: false,
-                    scrollPerPage: false,
-                    pagination: false,
-                    paginationNumbers: false
+                    autoPlay: 3000, //mover cada tres seegundos
+                    items: 1
                 });
 
             });
@@ -74,12 +71,51 @@ and open the template in the editor.
 
         </script>
 
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#botonocultamuestra").click(function () {
+                    $("#divocultamuestra").each(function () {
+                        displaying = $(this).css("display");
+                        if (displaying == "block") {
+                            $(this).fadeOut('slow', function () {
+                                $(this).css("display", "none");
+                            });
+                        } else {
+                            $(this).fadeIn('slow', function () {
+                                $(this).css("display", "block");
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
 
         <!-- End Script-->
 
+        <style>
+            #carousel {
+                /*css for full size background image*/
+                background: url(Image/tech.jpeg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+
+                height: 100%;
+                background-color: #060;
+                color: #fff;
+                text-align: center;
+                text-shadow: 0 1px 3px rgba(0,0,0,.5);
+
+            }
+
+        </style>
+
+
     </head>
     <body>
-        <div id="wrapper" >
+        <div class="wrapper">
+           
             <!--header-->
             <header>
                 <div class="container">
@@ -89,7 +125,7 @@ and open the template in the editor.
                                 <div class="container-fluid">
                                     <div class="col-lg-12">
                                         <div class="col-lg-6">
-                                            <a class="navbar-brand " style="margin-top: -15px" href="index.html"><img src="http://placehold.it/460x120"   class="img-responsive" alt="logo" title="Quality Systems Group"> </a>
+                                            <a class="navbar-brand " style="margin-top: -15px;" href="index.html"><img src="Image/Quality/pruebalog.png"   class="img-responsive" alt="logo" title="Quality Systems Group"> </a>
                                         </div>
 
                                         <div class="col-lg-offset-2" style="margin-top:15px;">
@@ -101,10 +137,10 @@ and open the template in the editor.
 
                                 <div class="navbar-collapse collapse navbar-right">
                                     <ul class="nav navbar-nav">
-                                        <li ><a href="index.html">Inicio</a></li>
-                                        <li><a href="Productos.html">Productos</a></li>
-                                        <li><a href="Conocenos.html">Conócenos</a></li>
-                                        <li><a href="Contactanos.html">Contacto</a></li>
+                                        <li class="menuli"><a href="index.html">Inicio</a></li>
+                                        <li class="menuli"><a href="Productos.html">Productos</a></li>
+                                        <li class="menuli"><a href="Conocenos.html">Conócenos</a></li>
+                                        <li class="menuli"><a href="Contactanos.html">Contacto</a></li>
                                     </ul>
                                 </div>
 
@@ -137,7 +173,7 @@ and open the template in the editor.
                                     <h1>Titulo</h1>        
                                     <h3>Informacion del proyecto</h3>
                                 </hgroup>
-                                <button class="btn btn-hero btn-lg" role="button">ver mas</button>
+                                <button class="btn btn-primary btn-lg" role="button">ver mas</button>
                             </div>
                         </div>
                         <div class="item slides">
@@ -147,7 +183,7 @@ and open the template in the editor.
                                     <h1>titulo 2</h1>        
                                     <h3>informacion del proyecto</h3>
                                 </hgroup>       
-                                <button class="btn btn-hero btn-lg" role="button">ver mas</button>
+                                <button class="btn btn-primary btn-lg" role="button">ver mas</button>
                             </div>
                         </div>
                         <div class="item slides">
@@ -157,102 +193,92 @@ and open the template in the editor.
                                     <h1>titulo 3</h1>        
                                     <h3>informacion del proyecto</h3>
                                 </hgroup>
-                                <button class="btn btn-hero btn-lg" role="button">ver mas</button>
+                                <button class="btn btn-primary btn-lg" role="button">ver mas</button>
                             </div>
                         </div>
                     </div> 
                 </div>
             </section>
 
+
             <aside style="margin-top: 15px">
                 <div class="container">
                     <div class="row destacados">
-                        <div class="col-md-4">
-                            <div>
+                        <div class="col-md-4" >
+                            <div style="height: 420px;">
                                 <!--http://placehold.it/200x200-->
                                 <img src="http://lorempixel.com/200/200/business/1/" alt="Texto Alternativo"  class="img-circle img-thumbnail">
                                 <h2>Quality ERP</h2>
-                                <p align="justify">Flexible, Amigable, Practico y Robusto, Conoce la herramienta que hará mas productiva tu empresa.</p>
-                                <a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+                                <p align="justify" class="asideBox">Flexible, Amigable, Practico y Robusto, Conoce la herramienta que hará mas productiva tu empresa.</p>
+                                <br>
+                               
+                                <a href="#" class="btn btn-primary" title="Enlace" style="margin-top: 7%">Leer más »</a>
                             </div>
+
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4" style="height: 500px;">
                             <div>
                                 <img src="http://lorempixel.com/200/200/business/6/" alt="Texto Alternativo" class="img-circle img-thumbnail">
                                 <h2>Quality BackUps</h2>
-                                <p align="justify">La información de tu empresa está segura porque nuestro sistema de BackUps se encarga de realizar copias todos los dias y de forma automática.</p>
-                                <a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+                                <p align="justify" class="asideBox" >La información de tu empresa está segura porque nuestro sistema de BackUps se encarga de realizar copias todos los dias y de forma automática.</p>
+                                
+                                <a href="#" class="btn btn-primary" title="Enlace" style="margin-top: 5%">Leer más »</a>
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4" style="height: 500px;">
                             <div>
                                 <img src="http://lorempixel.com/200/200/business/7/" alt="Texto Alternativo" class="img-circle img-thumbnail">
                                 <h2>Quality Updates</h2>
-                                <p align="justify">Nunca dejamos de mejorar y por eso nuestro sistema de actualizaciones te mantendrá al día y se encargará de buscar, descargar e instalar las nuevas caracteristicas de manera automática.</p>
-                                <a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+                                <p align="justify" class="asideBox">Nunca dejamos de mejorar y por eso nuestro sistema de actualizaciones te mantendrá al día y se encargará de buscar, descargar e instalar las nuevas características de manera automática.</p>
+
+                                <a href="#" class="btn btn-primary" title="Enlace" style="margin-top: 5%">Leer más »</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </aside>
-            <section id="Medio" style="margin-top: 20px">
 
-                <div class="well container"  >
-                    <div class="col-lg-5" >
-                        <h3 class="h3">¿ Eres contador ? </h3>
-                        <div class="text" ng-app="">
-                            <p>Registrate y accede a una versión de pruebas 100% funcional</p> 
-                            <img src="http://lorempixel.com/420/280/business/5/" alt="contador" class="img-rounded">
-                            <p></p>
-                            <input type="email" class="form-control" id="inscribir"
-                                   placeholder="Introduce tu email" size="1"  required>
-                            <p ></p>
-                            <button type="submit"  class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="float: right">Inscribete</button>
-                        </div>
 
-                    </div>
-                    <div class="col-lg-5 " style="float: right">
-                        <div>
-                            <section >
-                                <div class="row">
-                                    <div class="span8">
-                                        <div class="row">
-                                            <div class="span8">
-                                                <h4><strong>Profesional Entusiasta !!</strong></h4>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="span2">
-                                                <a href="#" class="thumbnail">
-                                                    <img src="http://lorempixel.com/500/200/business/8/" alt="">
-                                                    <!--"http://placehold.it/500x200"-->
-                                                </a>
-                                            </div>
-                                            <div class="span6">      
-                                                <h3 class="h3">Quality está en expansión</h3>
-                                                <p align="justify">
-                                                    Si eres un profesional entusiasta y quieres formar parte de nuestro equipo comercial, esta es tu oportunidad.
-                                                    <br>Seleccionaremos a una persona de cada ciudad principal para ser el único distribuidor de nuestro sistema en su región, 
-                                                    <br>Si te quieres ser parte de nuestro equipo, registrate, tu puedes ser el elegido.
-                                                </p> <button type="submit"  class="btn btn-primary"  >Postulate</button>
+            
 
-                                            </div>
-                                        </div>
+            <section class="container-fluid alert-info" style="padding-bottom: 2%;" >
+                
+                <div class="container-fluid"  >
+                    <div class="col-sm-4  " >
 
-                                    </div>
-                                </div>
+                        <h1>Eres Contador?</h1>
+                        <br>
+                        <img src="http://lorempixel.com/500/300/business/5/" alt="contador" class="img-rounded img-responsive">
+                        <br>
 
-                            </section>
-
-                        </div>
+                        <p class="lead ">Registrate y accede a una versión de pruebas 100% funcional</p>
+                        <input type="email" class="form-control" id="inscribir"
+                               placeholder="Introduce tu email" size="1"  required>
+                        <p ></p>
+                        <button type="submit"  class="btn btn-primary" data-toggle="modal" data-target="#myModal" >Inscribete</button>
 
                     </div>
+                    <div class="col-sm-4 " style="float: right" >
+
+                        <h2>Quality está en expansión!</h2>
+                        <br>
+                       
+                        <img src="http://lorempixel.com/500/300/business/8/" alt="entusiasta" class="img-rounded img-responsive">
+                        <br>
+                       
+                        <p class="lead">Si eres un profesional entusiasta y quieres formar parte de nuestro equipo comercial, esta es tu oportunidad</p>
+                        <br>
+                        <button type="submit"  class="btn btn-primary "  >Saber mas</button>
+
+                    </div>
+
+
+               
 
                 </div>
 
-                <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -265,14 +291,14 @@ and open the template in the editor.
 
                                     <fieldset>
                                         <legend>Datos Basicos</legend>
-                                        <span style="float: right;color: red">Rellene Por Favor todos Los campos</span>
+                                        <span style="float: right;color: red">Campos con * son Obligatorios</span>
                                         <div class="form-group">
-                                            <label for="correo">Email</label>
+                                            <label for="correo"><span style="color: #E66161;">*</span>Email</label>
                                             <input type="email" class="form-control" id="correo"
                                                    placeholder="Introduce tu email"  ng-bind="correo" readonly>
                                         </div>
                                         <div class="form-group col-lg-6">
-                                            <label for="name">Prime Nombre </label>
+                                            <label for="name"><span style="color: #E66161;">*</span>Prime Nombre </label>
                                             <input type="text" class="form-control" id="name" 
                                                    placeholder="Primer Nombre" required>
                                         </div>
@@ -285,7 +311,7 @@ and open the template in the editor.
 
 
                                         <div class="form-group col-lg-6" >
-                                            <label for="last_name">Primer Apellido</label>
+                                            <label for="last_name"><span style="color: #E66161;">*</span>Primer Apellido</label>
                                             <input type="text" class="form-control" id="last_name" 
                                                    placeholder="Primer Apellido" required>
                                         </div>
@@ -295,17 +321,14 @@ and open the template in the editor.
                                             <input type="text" class="form-control" id="slast_name" 
                                                    placeholder="Segundo Apellido" required>
                                         </div>
-                                        <div ng-app="">
-                                            <p>Name: <input type="text" ng-model="name"></p>
-                                            <p ng-bind="name"></p>
-                                        </div>
+
 
                                     </fieldset>
                                     <div class="form-group">
                                         <fieldset>
                                             <legend>Identificacion </legend>
                                             <div class="form-group " >
-                                                <label for="Identificacion">Cedula</label>
+                                                <label for="Identificacion"><span style="color: #E66161;">*</span>Cedula</label>
                                                 <input type="text" class="form-control" id="Identificacion" 
                                                        placeholder="Numero" required>
                                             </div>
@@ -317,12 +340,12 @@ and open the template in the editor.
                                         <fieldset>
                                             <legend>Contacto</legend>
                                             <div class="form-group col-lg-6" >
-                                                <label for="City">Ciudad</label>
+                                                <label for="City"><span style="color: #E66161;">*</span>Ciudad</label>
                                                 <input type="text"  class="form-control" id="City" 
                                                        placeholder="Ciudad" required>
                                             </div>
                                             <div class="form-group col-lg-6">
-                                                <label for="tel">telefono</label>
+                                                <label for="tel"><span style="color: #E66161;">*</span>telefono</label>
                                                 <input type="tel"  class="form-control" id="tel" 
                                                        placeholder="Telefono" required>
                                             </div>
@@ -340,7 +363,7 @@ and open the template in the editor.
 
                                             </div>
                                             <div class="form-group col-lg-6">
-                                                <label for="sc">Sector Comercial</label>
+                                                <label for="sc"><span style="color: #E66161;">*</span>Sector Comercial</label>
                                                 <input type="tel"  class="form-control" id="sc" 
                                                        placeholder="Sector Comercial" required>
                                             </div>
@@ -353,7 +376,7 @@ and open the template in the editor.
                                         <div class="form-group " >
                                             <label for="Cm">Comentarios</label>
                                             <textarea  class="form-control" id="Cm" 
-                                                       placeholder="Comentarios" required ></textarea>
+                                                       placeholder="Comentarios" required spellcheck="true" ></textarea>
                                         </div>
 
                                     </div>
@@ -367,83 +390,93 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
-                <!-- Modal -->
+
             </section>
 
-            <!--Testimoniales-->
-            <section id="carousel" style="margin-top: 20px;margin-bottom: 5px;">  
-                <center> <h1 class="h1" >Testimonios</h1> </center>               
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <center> <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div></center>
-
-                            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
-                                <!-- Carousel indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
-                                </ol>
-                                <!-- Carousel items -->
-                                <div class="carousel-inner">
-                                    <div class="active item">
-                                        <blockquote>
-                                            <p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                        </blockquote>
-                                        <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"><img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
-                                        <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez</h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
-                                    </div>
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                        </blockquote>
-                                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"><img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
-                                        <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez</h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
-                                    </div>
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                        </blockquote>
-                                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"> <img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
-                                        <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez</h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
-                                    </div>
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                        </blockquote>
-                                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"> <img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
-                                        <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez</h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
-                                    </div>
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>5Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                        </blockquote>
-                                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"> <img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
-                                        <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez</h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
-                                    </div>
-                                    <div class="item">
-                                        <blockquote>
-                                            <p>6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-                                        </blockquote>
-                                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"> <img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
-                                        <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez</h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
 
 
-                                    </div>
+            <div class="site-wrapper">
+                <div class="site-wrapper-inner">
+                    <div class="cover-container">
+
+                        <!--Testimoniales-->
+                        <section id="carousel" style="margin-top: 50px;margin-bottom: 5px;">  
+                            <center> <h1 class="subtitlesh1" >Testimonios</h1> </center>               
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <center> <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div></center>
+
+                                        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                                            <!-- Carousel indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                                                <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+                                            </ol>
+                                            <!-- Carousel items -->
+                                            <div class="carousel-inner">
+                                                <div class="active item">
+                                                    <blockquote>
+                                                        <p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                                    </blockquote>
+                                                    <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"><img src="http://lorempixel.com/100/100/people/9/" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
+                                                    <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez  <br><span style="font-size: 0.8em;font-family: sans-serif;">contador</span></h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
+                                                </div>
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                                    </blockquote>
+                                                    <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"><img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
+                                                    <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez <br><span style="font-size: 0.8em;font-family: sans-serif;">contador</span></h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
+                                                </div>
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                                    </blockquote>
+                                                    <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"> <img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
+                                                    <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez <br><span style="font-size: 0.8em;font-family: sans-serif;">contador</span></h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
+                                                </div>
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <p>4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                                    </blockquote>
+                                                    <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"> <img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
+                                                    <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez <br><span style="font-size: 0.8em;font-family: sans-serif;">contador</span></h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
+                                                </div>
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <p>5Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                                    </blockquote>
+                                                    <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"> <img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
+                                                    <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez <br><span style="font-size: 0.8em;font-family: sans-serif;">contador</span></h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
+                                                </div>
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <p>6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+                                                    </blockquote>
+                                                    <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"> <img src="http://placehold.it/100x100" alt="Texto Alternativo"  class="img-circle img-thumbnail"> </div>
+                                                    <div class="Name1"><h4 class="h4" style="color: black">Carlos Perez <br><span style="font-size: 0.8em;font-family: sans-serif;">contador</span></h4><p > <br>Empresa Vendedora A nivel nacional e internacional de calzados<br>con sedes en mas de 4 paises</p></div>
 
 
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>							
                                 </div>
                             </div>
-                        </div>							
+                        </section>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section id="carrucel" style="margin-bottom: 50px">
-                <div class="container" >
+  <section   id="carrucel" style="margin-bottom: 50px;margin-top: 6%;padding-top: 1%">
+                <div style="height: 350px">
                     <div class="cursual"><!--  start cursual  -->
-                        <h4>Nuestros Clientes Felices<span class="line"></span></h4>
+
+                        <center><h1 class="subtitlesh1 "style="margin-bottom: 4%;margin-top: 4%;color: white">Casos De Exito</h1></center>
                     </div>
                     <center>
                         <div id="owl-demo" class="owl-carousel"><!--start-img-cursual-->
@@ -454,161 +487,364 @@ and open the template in the editor.
                                 </div>
 
                             </div>
+
                             <div class="item">
                                 <div class="cau_left">
                                     <img class="lazyOwl" src="Image/logos/ML-VL1.png" alt="AudioColor" height="150" width="182">
                                 </div>
                             </div>
+
                             <div class="item">
                                 <div class="cau_left">
                                     <img class="lazyOwl" src="Image/logos/ACC-VL3.png" alt="AudioColor" height="150" width="182">
                                 </div>
                             </div>
+
                             <div class="item">
                                 <div class="cau_left">
                                     <img class="lazyOwl" src="Image/logos/GD-VL4.png" alt="AudioColor" height="150" width="182">
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="cau_left">
-                                    <img class="lazyOwl" src="http://placehold.it/182x150" alt="AudioColor" height="150" width="182">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="cau_left">
-                                    <img class="lazyOwl" src="http://placehold.it/182x150" alt="AudioColor" height="150" width="182">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="cau_left">
-                                    <img class="lazyOwl" src="http://placehold.it/182x150" alt="AudioColor" height="150" width="182">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="cau_left">
-                                    <img class="lazyOwl" src="http://placehold.it/182x150" alt="AudioColor" height="150" width="182">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="cau_left">
-                                    <img class="lazyOwl" src="http://placehold.it/182x150" alt="AudioColor" height="150" width="182">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="cau_left">
-                                    <img class="lazyOwl" src="http://placehold.it/182x150" alt="AudioColor" height="150" width="182">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="cau_left">
-                                    <img class="lazyOwl" src="http://placehold.it/182x150" alt="AudioColor" height="150" width="182">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="cau_left">
-                                    <img class="lazyOwl" src="http://placehold.it/182x150" alt="AudioColor" height="150" width="182">
-                                </div>
-                            </div>
 
                             <div class="item">
                                 <div class="cau_left">
-
-                                    <img class="lazyOwl" src="http://placehold.it/182x150" alt="AudioColor" height="150" width="182">
+                                    <img class="lazyOwl" src="Image/logos/K-VL5.png" alt="AudioColor" height="150" width="182">
                                 </div>
                             </div>
+
+
 
 
                         </div><!----//End-img-cursual---->
+
+                    </center>
+                    <center>
+                        <button style="margin-top: 2%;"class="btn btn-default" id="botonocultamuestra"  title="Mas Clientes"><i class="glyphicon glyphicon-th-large gly-spin"></i></button>
                     </center>
 
                 </div>
 
+
             </section>
 
-            <section id="allC">
-              
-            </section>
-
-
-            <footer style="background-color:rgb(86, 86, 93);color: white; " >
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="col-lg-3 col-md-6">
-
-
-                            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
-                                <p style="text-align:center; margin-top:20px;">
-                                    <img src="http://placehold.it/500x330" class="img-responsive" alt="">
-                                </p>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Familia Quality</h3>
-                                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                                        <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
-                                    </div>
+            <section id="divocultamuestra"  hidden="true">
+                <div class="box1" style="width:auto;">
+                    <div class="newspaper sizefont" style="height: 52%;width:80%;margin: 2% 6% 6% 5%;" >
+                        <div class="container" >
+                            <div class="row" >
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" ><i class="icon-shop12" style="font-size: 20px"></i> Comercio Estandar</h3>
                                 </div>
+
+                                <ul >
+                                    <li>Accesorios J.J.</li>
+                                    <li>Activa Traffic Commercial S.A.S</li>
+                                    <li>Artes y Vidrios del Prado</li>
+                                    <li>Audio Color Center S.A.S</li>
+                                    <li>Audio Shopping</li>
+                                    <li>Automundo Superllantas S.A.S</li>
+                                    <li>Chick Fragance</li>
+                                    <li>Ciclo Santiago</li>
+                                    <li>C.I Logistic Venture S.A</li>
+                                    <li>Distribuidora Alemana S.A.S</li>
+                                    <li>Dipaca S.A.S</li>
+                                    <li>Emcolfra S.A.S</li>
+                                    <li>Ferremateriales Hernández S.A.S</li>
+                                    <li>HSI mobile</li>
+                                    <li>Multitech</li>
+                                    <li>Tecnomóvi</li>
+                                    <li>Gerencia Logística y Mercados S.A.S</li>
+                                    <li>Garden Boutique S.A.S</li>
+                                    <li>Inversiones Tarud Farah S.A</li>
+                                    <li>Kantica S.A.S</li>
+                                    <li>Lubrimaga E.U</li>
+                                    <li>Megadistribuidora <br>Mundo del Estilista Ltda.</li>
+                                    <li >Megapartes Ltda.</li>
+                                    <li>Mercafranco</li>
+                                    <li>Mundial de Lubricantes S.A.S</li>
+                                    <li>Productos Campestre</li>
+                                    <li>Radicontrol Dosimétrico Ltda.</li>
+                                    <li>TGA CD & Accesorios para PC</li>
+                                    <li>Tintoner Colombia</li>
+                                    <li>Tu Accesorio</li>
+                                    <li>Variedades Fraema</li>
+                                    <li>Zalma S.A.S</li>
+                                    <li>Ciclomoto la Bendición</li>
+                                    <li>Jassir Distributors S.A.S</li>
+                                </ul>
+
                             </div>
 
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector"><i class="icon-round46" style="font-size: 20px"></i> Joyerías y Accesorios</h3>
+                                </div>
+                                <ul>
+                                    <li>Joyería & Marroquinería Khbeis S.A.S</li>
+                                    <li>Lalik</li>
+
+                                </ul>
+
+                            </div>
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        Industrial</h3>
+                                </div>
+                                <ul>
+                                    <li >Eco Green Recycling S.A.S</li>
+                                    <li >Productos Alimenticios Clachis</li>
+                                </ul>
+
+                            </div>
+
+
+                            <div class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        <i class="icon-cogs3" style="font-size: 20px"></i> Proyectos y Obras de Ingeniería</h3>
+                                </div>
+                                <ul>
+                                    <li >GAC ingeniería y Soluciones S.A.S</li>
+                                    <li >Proyectos Ltda.</li>
+                                </ul>
+
+                            </div>
+
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        <i class="icon-phone323" style="font-size: 20px"></i>  Prestación de servicios</h3>
+                                </div>
+                                <ul>
+                                    <li >Clever Ship Supply S.A.S</li>
+                                    <li >Tispom S.A.S</li>
+                                    <li >Padilla Sundheim. Abogados & consultores Especializados E.U</li>
+                                    <li > Alianza Humana Consultores S.A.S</li>
+                                    <li >Orgánicos del Caribe S.A.S</li>
+
+
+                                </ul>
+
+                            </div>
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        <i class="icon-delivery22" style="font-size: 20px"></i>  Servicios de Transporte</h3>
+                                </div>
+                                <ul>
+                                    <li >Expreso del Atlántico</li>
+                                </ul>
+
+                            </div>
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        <i class="fa fa-bed" style="font-size: 20px"></i>  Moteles</h3>
+                                </div>
+                                <ul>
+                                    <li >Amoblados Casanova Disco Bar S.A.S</li>
+                                    <li >La calera</li>
+                                </ul>
+
+                            </div>
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        <i class="icon-heel5" style="font-size: 20px"></i>   Ropa y Calzado</h3>
+                                </div>
+                                <ul>
+                                    <li >Felox S.A.S</li>
+                                    <li >Juanpis Tienda de la Moda</li>
+                                    <li >Variedades Medellín</li>
+                                    <li >Modicentro</li>
+                                    <li >15 mil</li>
+                                    <li >12 mil</li>
+                                    <li >Diamante</li>
+                                    <li >Ecomoda</li>
+                                    <li >Full moda in</li>
+                                    <li >Poppis</li>
+                                    <li >Samy</li>
+                                    <li >Picaras</li>
+                                </ul>
+
+                            </div>
+
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        <i class="icon-soccer44" style="font-size: 20px"></i> Productos Deportivos</h3>
+                                </div>
+                                <ul>
+                                    <li >Tuttos Sports</li>
+                                </ul>
+
+                            </div>
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        Tecnicentros</h3>
+                                </div>
+                                <ul>
+                                    <li >Autoservicio Los Alpes</li>
+                                    <li >B.J. Aires De La Costa Ltda</li>
+                                    <li >Sincroautos Uribe</li>
+
+
+                                </ul>
+
+                            </div>
+
+
+                            <div  class="row">
+                                <div class="panel-heading " >
+                                    <h3 class="panel-title title_Sector">
+                                        <i class="icon-hair3" style="font-size: 20px"></i> Salones de Belleza</h3>
+                                </div>
+                                <ul>
+                                    <li >Belladona</li>
+                                    <li >Cabellos Y Accesorios</li>
+                                    <li >Itala Peluquería</li>
+                                    <li >Itala Novia & SPA</li>
+
+                                </ul>
+
+                            </div>
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        <i class="icon-plate24" style="font-size: 20px"></i>  Restaurantes & Bares</h3>
+                                </div>
+                                <ul>
+                                    <li >Harmony Bohemia</li>
+                                    <li >Tremendo Guandu</li>
+                                    <li >Baruda VIP Disco Bar</li>
+
+
+                                </ul>
+
+                            </div>
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector" >
+                                        <i class="icon-dumbbell" style="font-size: 20px"></i> Gimnasio</h3>
+                                </div>
+                                <ul>
+                                    <li >C.M.D Universal Spa Ltda</li>
+
+                                </ul>
+
+                            </div>
+
+                            <div  class="row">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title title_Sector " >
+                                        <i class="icon-building40" style="font-size: 20px"></i> Inmobiliaria</h3>
+                                </div>
+                                <ul>
+                                    <li >Constructora E Inmobiliaria <br>Lorna Ltda</li>
+                                    <li >Francina Lafaurie</li>
+
+                                </ul>
+
+                            </div>
+
+
+
                         </div>
-                        <div class="col-lg-3">
 
-
-                        </div>
-
-
-                        <div class="col-lg-3 col-md-6">
-                            <h3>Ciudades:</h3>
-                            <ul>
-                                <li>Barranquilla</li>
-                                <li>Villavicencio</li>
-
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6">
-                            <h3>Contactanos:</h3>
-                            <p>¿Tienes alguna pregunta o comentario? Ponte en contacto Nosotros!</p>
-                            <p>
-                                Gomercial y ventas<br>
-
-                                <i class="fa fa-envelope"></i> comercial@qualitysystems.com.co
-                                Soporte Tecnico<br>
-
-                                <i class="fa fa-envelope"></i> soporte@qualitysystems.com.co
-                            </p>
-
-                            <h3>Lineas De Atencion:</h3>
-                            <p>
-                                <i class="fa fa-phone"></i> (5) 317-7806 <br>
-                                <i class="fa fa-phone"></i> (5) 356-7277 <br>
-                            </p>
-
-                        </div>
-
-
-
-                        <p>Copyright © Quality Systems Group 2015| <a style="color: black" href="">Politicas De Privacidad</a> | <a style="color: black"href="">Terminos de uso</a></p>
 
                     </div>
+                </div>
 
+            </section>
+
+            <footer class="skin_footer">
+
+
+
+                <div class="col-lg-4">
+                    <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                        <p style="text-align:center; margin-top:20px;">
+                            <img src="http://placehold.it/400x400" class="img-responsive" alt="">
+                        </p>
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Familia Quality</h3>
+                                <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                <a class=" btn btn-default" href="#"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
+
+                <div class="col-lg-2 col-md-6">
+                    <h3 style="color: white;">Ciudades</h3>
+                    <ul>
+                        <li>Barranquilla</li>
+                        <li>Villavicencio</li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h3 style="color: white;">Contactanos:</h3>
+                    <p>¿Tienes alguna pregunta o comentario? Ponte en contacto Nosotros!</p>
+                    <p>
+                        Comercial y ventas<br>
+
+                        <i class="fa fa-envelope"></i> comercial@qualitysystems.com.co<br>
+                        Soporte Tecnico <br>
+
+                        <i class="fa fa-envelope"></i> soporte@qualitysystems.com.co
+                    </p>
+
+                    <h3 style="color: white;">Lineas De Atencion:</h3>
+                    <p>
+                        <i class="fa fa-phone"></i> (5) 317-7806 <br>
+                        <i class="fa fa-phone"></i> (5) 356-7277 <br>
+                    </p>
+
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+
+
+
+
+            </footer>
+
+
+
+
         </div>
-    </div>
 
-
-</footer>
-
-</div>
-
-
-
-
-
-
-
-
-
-</body>
+    </body>
 </html>
