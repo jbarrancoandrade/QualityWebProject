@@ -38,7 +38,7 @@ and open the template in the editor.
   bottom: 10px;
 }
 #fade-quote-carousel.carousel .carousel-indicators > li {
-  background-color: #e84a64;
+  background-color: #666;
   border: none;
 }
 #fade-quote-carousel blockquote {
@@ -55,6 +55,9 @@ and open the template in the editor.
     text-align: center;
     border: none;
     margin: 8px auto;
+    font-family: Georgia;
+    font-style: italic;
+    line-height: 20px;
   
 }
 

@@ -10,8 +10,10 @@ and open the template in the editor.
 
 
 @import url('http://fonts.googleapis.com/css?family=Pacifico');
-@import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url('http://fonts.googleapis.com/css?family=Economica:700,900');
+@import url('http://fonts.googleapis.com/css?family=Overlock:700,900');
+
+
 
 /* empresas*/
 div.sizefont{
@@ -42,13 +44,28 @@ li.menuli{
  
 }
 
-p.asideBox{
+.titleaside{
+   font-family: 'Overlock';
    
 }
+aside{
+    font-family: 'Overlock';
+}
+
+.letras_medio{
+    font-family: 'Economica';
+}
+
+h3.color1{
+font-size: 40px !important;
+font-weight: bold;
+color: #a8b5be;
+}
+
+
 
 h1.subtitlesh1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    
     color: #525252;
 }
 
